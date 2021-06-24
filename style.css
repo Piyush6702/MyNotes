@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 * {
   padding: 0;
   margin: 0px;
@@ -5,29 +7,63 @@
 }
 
 body {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  
   background-color: lightblue;
-
+  font-family: 'Nunito', sans-serif;
   padding: 20px 10px;
   /* overflow: ; */
 }
 
+.top-section{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.appheading{
+  text-align: center;
+  color: brown;
+  text-decoration: underline;
+}
+
 .add {
-  position: fixed;
+  /* position: fixed;
   top: 0.8rem;
-  right: 1.3rem;
+  right: 1.3rem; */
   padding: 8px 10px;
   background-color: lightcyan;
   border: none;
   border-radius: 5px;
   color: rgb(2, 180, 2);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
 }
 
 .add i {
   margin: 0px 5px;
+}
+
+.instructions{
+  margin: 10px 0px;
+  padding: 8px;
+
+}
+.instructions ul{
+  margin-left: 18px;
+  color: #4c2f24;
+}
+.notes{
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+  top: 8%;
+  /* position: absolute; */
+  overflow: hidden;
+  font-family: inherit;
 }
 
 .note {
@@ -35,7 +71,7 @@ body {
   height: 400px;
   background-color: white;
   /* padding: 5px; */
-  margin: 20px 30px;
+  margin: 10px;
   box-shadow: 2px 2px 10px gray;
   border: 0px;
   border-radius: 5px;
@@ -81,4 +117,22 @@ textarea {
 
 .hidden {
   display: none;
+}
+.bottom-link{
+  margin: auto;
+
+  font-weight: bold;
+  color: rgb(31, 31, 7);
+
+}
+
+
+@media screen and (max-width:450px) {
+  .notes{
+    justify-content: start;
+  }
+  .note{
+    width: 100%;
+    margin: 10px 0px;
+  }
 }

@@ -11,10 +11,31 @@
 </head>
 
 <body>
+    <div class="top-section">
 
-    <button class="add" id="add">
-        <i class="fas fa-plus"></i>Add Note
-    </button>
+        <h1 class="appheading">MyNotes</h1>
+
+        <button class="add" id="add">
+            <i class="fas fa-plus"></i>Add Note
+        </button>
+    </div>
+
+    <div class="instructions">
+        <h3>Instructions</h3>
+        <ul>
+            <li>Click on Add Note button to create a empty Notes</li>
+            <li>Click on <i class="fas fa-edit" style="margin: 0px 4px;"></i> to Edit & Save notes </li>
+            <li> Click on <i class="fas fa-trash-alt" style="margin: 0px 4px;"></i> to delete notes</li>
+            <li><a class="bottom-link" target="_blank" href="https://www.markdownguide.org/basic-syntax/">Refer to this for Markdown
+                Syntax</a></li>
+        </ul>
+    </div>
+
+    <div class="notes">
+
+    </div>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.1/marked.min.js"></script>
     <script src="./app.js"></script>

@@ -1,4 +1,5 @@
 let addbtn = document.getElementById("add");
+let notesarea=document.querySelector(".notes")
 
 addbtn.addEventListener("click", () => addNote());
 
@@ -72,7 +73,7 @@ function addNote(text = "") {
     updateLS()
   });
 
-  document.body.appendChild(newnote);
+ notesarea.appendChild(newnote);
 }
 
 
