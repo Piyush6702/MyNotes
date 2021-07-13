@@ -78,6 +78,10 @@ body {
   overflow: hidden;
 }
 
+.note ol,ul{
+  margin-left: 15px;
+}
+
 .tools {
   display: flex;
   justify-content: flex-end;
